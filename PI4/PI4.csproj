@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0EA9404-DCF3-4CC6-8EC4-AA3327323C00}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PI4</RootNamespace>
+    <AssemblyName>PI4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LinqToExcel">
+      <HintPath>..\packages\LinqToExcel.1.11.0\lib\LinqToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Remotion">
+      <HintPath>..\packages\LinqToExcel.1.11.0\lib\Remotion.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\packages\LinqToExcel.1.11.0\lib\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Interfaces">
+      <HintPath>..\packages\LinqToExcel.1.11.0\lib\Remotion.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="advancesettings.html" />
+    <Content Include="AgregarHorario.aspx" />
+    <Content Include="AgregarUsuario.aspx" />
+    <Content Include="Aprobacion.aspx" />
+    <Content Include="assets\icons\book.ico" />
+    <Content Include="assets\icons\login.png" />
+    <Content Include="assets\icons\Login_50px.png" />
+    <Content Include="assets\icons\mCSB_buttons.png" />
+    <Content Include="assets\icons\SelectMaterialIndicator-white.png" />
+    <Content Include="assets\icons\SelectMaterialIndicator.png" />
+    <Content Include="assets\img\Agregar.png" />
+    <Content Include="assets\img\book.png" />
+    <Content Include="assets\img\calendar.png" />
+    <Content Include="assets\img\calendar_book.png" />
+    <Content Include="assets\img\category.png" />
+    <Content Include="assets\img\chart.png" />
+    <Content Include="assets\img\checklist.png" />
+    <Content Include="assets\img\clock.png" />
+    <Content Include="assets\img\Delete.png" />
+    <Content Include="assets\img\flat-book.png" />
+    <Content Include="assets\img\font-login.jpg" />
+    <Content Include="assets\img\institution.png" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\logoUTEQd.png" />
+    <Content Include="assets\img\Modificar.png" />
+    <Content Include="assets\img\pdf.png" />
+    <Content Include="assets\img\section.png" />
+    <Content Include="assets\img\user-sesion.png" />
+    <Content Include="assets\img\user.png" />
+    <Content Include="assets\img\user01.png" />
+    <Content Include="assets\img\user02.png" />
+    <Content Include="assets\img\user03.png" />
+    <Content Include="assets\img\user04.png" />
+    <Content Include="assets\img\user05.png" />
+    <Content Include="Carrera.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\jquery.mCustomScrollbar.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\material-design-iconic-font.min.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\sweet-alert.css" />
+    <Content Include="css\timeline.css" />
+    <Content Include="Docente.aspx" />
+    <Content Include="Download.aspx" />
+    <Content Include="EditarDatosPersona.aspx" />
+    <Content Include="EliminarHorario.aspx" />
+    <Content Include="fonts\AlegreyaSansSC-Regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="fonts\OpenSans-CondLight.svg" />
+    <Content Include="fw_FacultadCarrera.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Horarios.aspx" />
+    <Content Include="Imagenes\295438.png" />
+    <Content Include="Imagenes\agregar-usuario.png" />
+    <Content Include="Imagenes\beca.png" />
+    <Content Include="Imagenes\biblioteca %281%29.png" />
+    <Content Include="Imagenes\c0a1f02d907a5abfc147fbd9e631e5f7.png" />
+    <Content Include="Imagenes\Delete.png" />
+    <Content Include="Imagenes\icons8-agregar-usuario-grupo-mujer-hombre-64 %282%29.png" />
+    <Content Include="Imagenes\icons8-carpeta-de-usuario-100.png" />
+    <Content Include="Imagenes\icons8-descargando-actualizaciones-32.png" />
+    <Content Include="Imagenes\icons8-más-48.png" />
+    <Content Include="Imagenes\kisspng-computer-icons-calendar-date-public-transport-time-schedule-5ac3fd60f0f358.9035113715227938249869.png" />
+    <Content Include="Imagenes\logoUTEQoriginal1.png" />
+    <Content Include="Imagenes\new Document.png" />
+    <Content Include="InicioAdministrador.aspx" />
+    <Content Include="InicioEstudiante.aspx" />
+    <Content Include="Inicio_Horario.aspx" />
+    <Content Include="JosHorarioArchivo.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.11.2.min.js" />
+    <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\sweet-alert.min.js" />
+    <Content Include="loguin.aspx" />
+    <Content Include="Materia.aspx" />
+    <Content Include="ModificarHorario.aspx" />
+    <Content Include="MostrarHorarios.aspx" />
+    <Content Include="Notificaciones.aspx" />
+    <Content Include="PasswordRecuperar.aspx" />
+    <Content Include="Principal.aspx" />
+    <Content Include="RecuperacionPass.aspx" />
+    <Content Include="VerHorario.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarHorario.aspx.cs">
+      <DependentUpon>AgregarHorario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarHorario.aspx.designer.cs">
+      <DependentUpon>AgregarHorario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUsuario.aspx.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.aspx.designer.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aprobacion.aspx.cs">
+      <DependentUpon>Aprobacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aprobacion.aspx.designer.cs">
+      <DependentUpon>Aprobacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArchivosDAL.cs" />
+    <Compile Include="Carrera.aspx.cs">
+      <DependentUpon>Carrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrera.aspx.designer.cs">
+      <DependentUpon>Carrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CCorreo.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Docente.aspx.cs">
+      <DependentUpon>Docente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Docente.aspx.designer.cs">
+      <DependentUpon>Docente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarDatosPersona.aspx.cs">
+      <DependentUpon>EditarDatosPersona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarDatosPersona.aspx.designer.cs">
+      <DependentUpon>EditarDatosPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarHorario.aspx.cs">
+      <DependentUpon>EliminarHorario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarHorario.aspx.designer.cs">
+      <DependentUpon>EliminarHorario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email.cs" />
+    <Compile Include="fw_FacultadCarrera.aspx.cs">
+      <DependentUpon>fw_FacultadCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fw_FacultadCarrera.aspx.designer.cs">
+      <DependentUpon>fw_FacultadCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Horarios.aspx.cs">
+      <DependentUpon>Horarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Horarios.aspx.designer.cs">
+      <DependentUpon>Horarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdministrador.aspx.cs">
+      <DependentUpon>InicioAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioAdministrador.aspx.designer.cs">
+      <DependentUpon>InicioAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioEstudiante.aspx.cs">
+      <DependentUpon>InicioEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioEstudiante.aspx.designer.cs">
+      <DependentUpon>InicioEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio_Horario.aspx.cs">
+      <DependentUpon>Inicio_Horario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio_Horario.aspx.designer.cs">
+      <DependentUpon>Inicio_Horario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JosHorarioArchivo.aspx.cs">
+      <DependentUpon>JosHorarioArchivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JosHorarioArchivo.aspx.designer.cs">
+      <DependentUpon>JosHorarioArchivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarTreeView_FC.cs" />
+    <Compile Include="loguin.aspx.cs">
+      <DependentUpon>loguin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loguin.aspx.designer.cs">
+      <DependentUpon>loguin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterAdministrador.Master.cs">
+      <DependentUpon>MasterAdministrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterAdministrador.Master.designer.cs">
+      <DependentUpon>MasterAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterEstudiante.Master.cs">
+      <DependentUpon>MasterEstudiante.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterEstudiante.Master.designer.cs">
+      <DependentUpon>MasterEstudiante.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Materia.aspx.cs">
+      <DependentUpon>Materia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materia.aspx.designer.cs">
+      <DependentUpon>Materia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarHorario.aspx.cs">
+      <DependentUpon>ModificarHorario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarHorario.aspx.designer.cs">
+      <DependentUpon>ModificarHorario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarHorarios.aspx.cs">
+      <DependentUpon>MostrarHorarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarHorarios.aspx.designer.cs">
+      <DependentUpon>MostrarHorarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio.cs" />
+    <Compile Include="Notificaciones.aspx.cs">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notificaciones.aspx.designer.cs">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordRecuperar.aspx.cs">
+      <DependentUpon>PasswordRecuperar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordRecuperar.aspx.designer.cs">
+      <DependentUpon>PasswordRecuperar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.cs" />
+    <Compile Include="Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="RecuperacionPass.aspx.cs">
+      <DependentUpon>RecuperacionPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperacionPass.aspx.designer.cs">
+      <DependentUpon>RecuperacionPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UTEQ.Master.cs">
+      <DependentUpon>UTEQ.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UTEQ.Master.designer.cs">
+      <DependentUpon>UTEQ.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VerHorario.aspx.cs">
+      <DependentUpon>VerHorario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerHorario.aspx.designer.cs">
+      <DependentUpon>VerHorario.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\AlegreyaSansSC-Regular.eot" />
+    <Content Include="fonts\AlegreyaSansSC-Regular.ttf" />
+    <Content Include="fonts\AlegreyaSansSC-Regular.woff" />
+    <Content Include="fonts\AlegreyaSansSC-Regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="fonts\OpenSans-CondLight.eot" />
+    <Content Include="fonts\OpenSans-CondLight.ttf" />
+    <Content Include="fonts\OpenSans-CondLight.woff" />
+    <Content Include="fonts\OpenSans-CondLight.woff2" />
+    <Content Include="MasterEstudiante.Master" />
+    <Content Include="MasterAdministrador.Master" />
+    <Content Include="packages.config" />
+    <Content Include="UTEQ.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1784</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9792/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
